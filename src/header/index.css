@@ -1,0 +1,79 @@
+.navbar {
+  background-color: #DAE5FF;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right:40px ;
+}
+
+.first-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.second-part {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.links:hover {
+  color: blue;
+}
+
+/* ✅ Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .second-part {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .second-part.open {
+    display: flex;
+  }
+
+  .second-part .links,
+  .second-part button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .second-part button {
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+}

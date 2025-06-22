@@ -1,0 +1,72 @@
+.heading{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.career-page{
+    background-image: url("https://res.cloudinary.com/dnxbl0xrb/image/upload/v1750585045/4f70bc7d6c6f6f319f87eaffc8b803b507ffe38d_jnlbrk.png");
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+    margin-top: 70px;
+}
+
+.career-logs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paragraph{
+    color: white;
+    font-size: 25px;
+    max-width: 500px;
+    padding-bottom: 20px;
+}
+
+.intenship-logo{
+    background-image: url("https://res.cloudinary.com/dnxbl0xrb/image/upload/v1750585922/f4855cd091e8028b5f2ef92bb7b734b4c1e061f5_lm9tjr.png");
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+.intenship-ing-text{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    
+
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .paragraph {
+    font-size: 15px;
+    padding: 0 10px 20px;
+  }
+
+  .intenship-ing-text {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .intenship-logo {
+    padding: 30px 15px;
+  }
+
+  .career-logs img {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
